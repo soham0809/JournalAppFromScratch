@@ -1,0 +1,10 @@
+spring :
+  data :
+    mongodb :
+      uri : mongodb+srv://SohamJ08:SohamJ08@cluster0.utbkt60.mongodb.net/?appName=Cluster0
+      database : journaldb
+      auto-index-creation : true
+
+
+server :
+  port : 8081
