@@ -11,12 +11,15 @@
     import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
     import org.springframework.security.crypto.password.PasswordEncoder;
     import org.springframework.stereotype.Component;
+    import org.springframework.stereotype.Service;
 
     import java.util.Arrays;
     import java.util.List;
     import java.util.Optional;
 
-    @Component
+
+    // only @Component would have also worker , this is also similar to it, but just inscreasing readablity , telling here we have buisness logic wrote inside this class
+    @Service
     @Slf4j
     public class UserService {
 

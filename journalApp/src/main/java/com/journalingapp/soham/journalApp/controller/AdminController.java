@@ -1,6 +1,7 @@
 package com.journalingapp.soham.journalApp.controller;
 
 
+import com.journalingapp.soham.journalApp.cache.AppCache;
 import com.journalingapp.soham.journalApp.entity.User;
 import com.journalingapp.soham.journalApp.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,10 @@ import java.util.List;
 @RestController
 @RequestMapping("/admin")
 public class  AdminController {
+
+
+    @Autowired
+    private AppCache appCache;
     
     @Autowired
     private UserService userService ;
@@ -33,6 +38,12 @@ public class  AdminController {
     public void createAdminUser(@RequestBody User user){
         userService.saveAdminUser(user);
 
+    }
+
+
+    @GetMapping("clear-app-cache")
+    public void clearAppCache(){
+        appCache.init();
     }
 
 }

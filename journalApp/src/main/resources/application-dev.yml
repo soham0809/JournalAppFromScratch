@@ -17,3 +17,7 @@ logging:
 #    com.journalingapp.soham: DEBUG
      root: ERROR
 #     root: OFF
+
+weather:
+  api:
+    key: 841187788ae02d20304d1786b3fbffbc
