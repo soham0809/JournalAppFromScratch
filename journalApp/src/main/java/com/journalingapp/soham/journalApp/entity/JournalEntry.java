@@ -1,6 +1,7 @@
 package com.journalingapp.soham.journalApp.entity;
 
 
+import com.journalingapp.soham.journalApp.enums.Sentiment;
 import lombok.*;
 
 
@@ -21,7 +22,9 @@ import java.util.Objects;
 public class  JournalEntry  {
     @Id
     private ObjectId id ;
+    @NonNull
     private String title;
     private String content ;
     private LocalDateTime date ;
+    private Sentiment sentiment ;
 }

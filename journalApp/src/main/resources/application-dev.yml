@@ -4,6 +4,24 @@ spring :
       uri : mongodb+srv://SohamJ08:SohamJ08@cluster0.utbkt60.mongodb.net/?appName=Cluster0
       database : journaldb
       auto-index-creation : true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: soham.joshi.st@gmail.com
+    password: lnow zfxq qicy xffs
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  redis:
+    uri : redis-cli -u redis://default:rtRUJnlwoUTVk7EbH64xPvHy7HcurNez@redis-12440.crce206.ap-south-1-1.ec2.cloud.redislabs.com:12440
+
+
+
+
+
 
 
 server :
@@ -21,3 +39,5 @@ logging:
 weather:
   api:
     key: 841187788ae02d20304d1786b3fbffbc
+
+
